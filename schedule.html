@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@300&family=Manrope:wght@300&family=Outfit:wght@100;300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            font-family: josefin sans;
+            margin: 0;
+            padding: 0;
+        }
+        .date{
+            color:white;
+        }
+        h1{
+            text-align: center;
+        }
+        .container {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .schedule {
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+            margin-top:15px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .date {
+            width: 90%;
+            padding: 10px;
+            background-color: #cd5334;
+            border-radius: 10px;
+        }
+        .image {
+            width: 90%;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .description {
+            grid-column: span 2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navLogo{
+            width:60px;
+            height:50px;
+        }
+        #mainTitle{
+            text-align: center;
+            font-size: 4rem;
+            padding: 5rem 3rem;
+            background-color: #2e282a42;
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #navigationBar{
+            background-color: #2E282A;
+            padding: 20px 0px;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #navigationBar button{
+            font-family: 'Josefin Sans', sans-serif;
+            background: none;
+            border: none;
+            color: white;
+        }
+        #navigationBar button:hover{
+            background-color: #CD5334;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #navigationBar button:active{
+            color: rgb(189, 189, 189);
+        }
+        #background{
+            background-image: url("IMG_3837.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div id = "background">
+        <h1 id = "mainTitle">Festival Entertainment Schedule</h1>
+    </div>
+    <div id = "navigationBar">
+        <button id = "homeButton" onclick = "window.location.href='index.html'"><img id = "navLogo" src = "3f548a07-fd58-4e03-941f-4c37359e216e.png"></button>
+        <button onclick = "window.location.href='schedule.html'">Schedule</button>
+        <button onclick = "window.location.href='vendors.html'">Vendors</button>
+        <button onclick = "window.location.href='involved.html'">Get Involved</button>
+        <button onclick = "window.location.href='faq.html'">FAQ</button>
+        <button onclick = "window.location.href='contact.html'">Contact</button>
+    </div>
+    </head>
+    <div class="container">
+        <div class="schedule">
+            <div class="date">
+                <h2>25</h2>
+                <p>SEP</p>
+            </div>
+            <div class="image">
+                <img height= 150px width= 160px  src="IMG_1950.jpg" alt="Placeholder Image">
+            </div>
+            <div class="description">
+                <h2>Kickoff Ministry Night Event</h2>
+                <p>6:00 PM: Opening Ceremony<br>
+                    6:30 PM: Local Choir Performance<br>
+                    7:30 PM: Inspirational Speaker<br>
+                    8:30 PM: Community Sing-Along
+                </p>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="date">
+                <h2>26</h2>
+                <p>SEP</p>
+            </div>
+            <div class="image">
+                <img height= 198px width= 160px  src="IMG_1994.jpg" alt="Placeholder Image">
+            </div>
+            <div class="description">
+                <h2>Family Night & Young Professional Showcase</h2>
+                <p>5:00 PM: Opening Remarks<br>
+                    5:30 PM: Student Talent Show<br>
+                    6:30 PM: Local Dance Troupe Performance<br>
+                    7:30 PM: Young Entrepreneurs Pitch Session<br>
+                    8:30 PM: Family Movie Screening                    
+                </p>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="date">
+                <h2>27</h2>
+                <p>SEP</p>
+            </div>
+            <div class="image">
+                <img  height= 150px width= 160px src="IMG_3011.jpg" alt="Placeholder Image">
+            </div>
+            <div class="description">
+                <h2>Carnival & Live Concerts</h2>
+                <p>4:00 PM: Carnival Opens<br>
+                    5:00 PM: School Band Performance<br>
+                    6:30 PM: Pageant Performances<br>
+                    8:00 PM: Headliner Concert: Local Celebrity Band                    
+                </p>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="date">
+                <h2>28</h2>
+                <p>SEP</p>
+            </div>
+            <div class="image">
+                <img height= 205px width= 170px src="IMG_2895.jpg" alt="Placeholder Image">
+            </div>
+            <div class="description">
+                <h2>Parade & Full Day Carnival</h2>
+                <p>10:00 AM: Grand Parade<br>
+                    12:00 PM: Carnival Rides and Games Open<br>
+                    1:00 PM: Pageant Showcase<br>
+                    2:30 PM: Folk Music Ensemble<br>
+                    4:00 PM: Acrobatic Performance<br>
+                    5:30 PM: Live Music<br>
+                    7:00 PM: Evening Headliner: Regional  Band<br>
+                    9:00 PM: DJ Dance Party                    
+                </p>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="date">
+                <h2>29</h2>
+                <p>SEP</p>
+            </div>
+            <div class="image">
+                <img height= 200px width= 160px src="IMG_2835.jpg" alt="Placeholder Image">
+            </div>
+            <div class="description">
+                <h2>Multicultural Day</h2>
+                <p>12:00 PM: Opening of Multicultural Day<br>
+                    12:30 PM: Salsa Dance Workshop<br>
+                    1:30 PM: International Music Acts<br>
+                    3:00 PM: Cultural Fashion Show<br>
+                    4:30 PM: World Cuisine Cooking Show<br>
+                    6:00 PM: Multicultural Dance Performance<br>
+                    7:30 PM: Closing Ceremony<br>                    
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
